@@ -8,9 +8,9 @@ with open("email.txt") as archivo :
     for recipent in archivo:
         subject = f"Fwd: support issue #{subject_numero}"
         body = "waiting services"
-        sender = "soporte.printware@gmail.com"
+        sender = ""
         recipients = recipent.strip()
-        password = "vvlsecvwegorlcfh"
+        password = ""
         subject_numero += 1
         def send_email(subject, body, sender, recipients, password):
             msg = MIMEText(body)
